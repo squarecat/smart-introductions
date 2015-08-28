@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+
+// Fonts
+$roboto-font: 'Roboto', sans-serif;
+
+@font-face {
+  font-family: UniSans;
+  src: url("../fonts/Uni Sans Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: UniSansBold;
+  src: url("../fonts/Uni Sans Heavy.otf") format("opentype");
+}
+
+// Colors
+$primary-color: #e82618;
+
+$secondary-color: #676666;
+$secondary-lowlight: #4a4a4a;
+
+// Media Queries
+$screen-mobile: 320px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+@font-face {
+  font-family: UniSans;
+  src: url("../fonts/Uni Sans Thin.otf") format("opentype"); }
+@font-face {
+  font-family: UniSansBold;
+  src: url("../fonts/Uni Sans Heavy.otf") format("opentype"); }
+html {
+  font-size: 16px;
+  font-family: "UniSans", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  min-height: 700px; }
+  @media screen and (max-width: 768px) {
+    html {
+      min-height: 550px; } }
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+.btn {
+  font-family: "UniSansBold";
+  letter-spacing: 1px; }
+
+.btn--grey {
+  background-color: #676666;
+  transition: background 0.4s ease-in-out; }
+  .btn--grey:hover {
+    background-color: #4d4d4d; }
+
+.btn--red {
+  background-color: #e82618;
+  transition: background 0.4s ease-in-out; }
+  .btn--red:hover {
+    background-color: #ba1e13; }
+
+.landing {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  border-top: 4px solid #e82618; }
+
+.landing::after {
+  content: "";
+  background-image: url("../img/landing_background.png");
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1; }
+
+.landing__header {
+  margin: 5vh 0;
+  text-align: center;
+  padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .landing__header {
+      margin: 10px 0 0 0; } }
+
+.landing__header__logo {
+  width: 100%;
+  max-width: 400px; }
+
+.landing__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 4rem;
+  text-align: center;
+  color: #676666;
+  padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .landing__title {
+      font-size: 2.5rem; } }
+
+.landing__action-btns {
+  margin: 2.5rem 0 0.8rem 0;
+  padding: 0 20px;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .landing__action-btns {
+      margin: 10px 0;
+      padding: 0; } }
+
+.landing__action-btn {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 1.2rem 0.5rem;
+  width: 190px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 3px;
+  height: 15px; }
+  @media screen and (max-width: 768px) {
+    .landing__action-btn {
+      width: 130px;
+      margin: 0 0.2rem;
+      padding: 1rem 0.4rem;
+      font-size: 0.8rem; } }
+
+.landing__nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: #676666;
+  border-bottom: 4px solid #4a4a4a; }
+  @media screen and (max-width: 768px) {
+    .landing__nav {
+      height: 100px; } }
+
+.landing__nav__btns {
+  text-align: center;
+  padding: 0;
+  margin: 0; }
+
+.landing__nav__btn {
+  display: inline-block;
+  margin: -1.5rem 3.5rem; }
+  @media screen and (max-width: 768px) {
+    .landing__nav__btn {
+      margin: -1.5rem 0.5rem; } }
+
+.landing__nav__fa-icon {
+  background-color: #FFF;
+  color: #676666;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 30px 22px;
+  border: 7px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.4s ease-in-out, color 0.4s ease-in-out, background-color 0.4s ease-in-out; }
+  @media screen and (max-width: 768px) {
+    .landing__nav__fa-icon {
+      padding: 14px 10px;
+      font-size: 2rem;
+      border-color: rgba(0, 0, 0, 0.2);
+      border-width: 5px; } }
+  .landing__nav__btn:hover .landing__nav__fa-icon {
+    background-color: #4a4a4a;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5); }
+    @media screen and (max-width: 768px) {
+      .landing__nav__btn:hover .landing__nav__fa-icon {
+        border-width: 5px; } }
+
+.landing__nav__btn__text {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.75rem; }
+  @media screen and (max-width: 768px) {
+    .landing__nav__btn__text {
+      letter-spacing: 1px;
+      font-size: 0.7rem; } }
+
+/*# sourceMappingURL=main.css.map */

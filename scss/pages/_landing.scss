@@ -1,0 +1,154 @@
+.landing {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  border-top: 4px solid $primary-color;
+}
+
+.landing::after {
+  content: "";
+  background-image: url("../img/landing_background.png");
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.landing__header {
+  margin: 5vh 0;
+  text-align: center;
+  padding: 20px;
+
+  @media screen and (max-width: $screen-tablet) {
+    margin: 10px 0 0 0;
+  }
+}
+
+.landing__header__logo {
+  width: 100%;
+  max-width: 400px;
+}
+
+.landing__title {
+  font-family: $roboto-font;
+  font-weight: 100;
+  font-size: 4rem;
+  text-align: center;
+  color: $secondary-color;
+  padding: 20px;
+
+  @media screen and (max-width: $screen-tablet) {
+    font-size: 2.5rem;
+  }
+}
+
+.landing__action-btns {
+  margin: 2.5rem 0 0.8rem 0;
+  padding: 0 20px;
+  text-align: center;
+
+  @media screen and (max-width: $screen-tablet) {
+    margin: 10px 0;
+    padding: 0;
+  }
+}
+
+.landing__action-btn {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 1.2rem 0.5rem;
+  width: 190px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 3px;
+  height: 15px;
+
+  @media screen and (max-width: $screen-tablet) {
+    width: 130px;
+    margin: 0 0.2rem;
+    padding: 1rem 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+.landing__nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: $secondary-color;
+  border-bottom: 4px solid $secondary-lowlight;
+
+  @media screen and (max-width: $screen-tablet) {
+    height: 100px;
+  }
+}
+
+.landing__nav__btns {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.landing__nav__btn {
+  display: inline-block;
+  margin: -1.5rem 3.5rem;
+
+  @media screen and (max-width: $screen-tablet) {
+    margin: -1.5rem 0.5rem;
+  }
+}
+
+.landing__nav__fa-icon {
+  background-color: #FFF;
+  color: $secondary-color;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 30px 22px;
+  border: 7px solid rgba(0, 0, 0, 0.2);
+  transition: 
+    border-color 0.4s ease-in-out,
+    color 0.4s ease-in-out,
+    background-color 0.4s ease-in-out;
+  
+  @media screen and (max-width: $screen-tablet) {
+    padding: 14px 10px;
+    font-size: 2rem;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 5px;
+  }
+
+  .landing__nav__btn:hover & {
+    background-color: $secondary-lowlight;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+
+    @media screen and (max-width: $screen-tablet) {
+      border-width: 5px;
+    }
+  }
+}
+
+.landing__nav__btn__text {
+  color: white;
+  font-family: $roboto-font;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.75rem;
+
+  @media screen and (max-width: $screen-tablet) {
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+  }
+}
+
+
