@@ -1,0 +1,84 @@
+.c-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: $secondary-color;
+  border-bottom: 4px solid $secondary-lowlight;
+
+  @media screen and (max-width: $screen-tablet) {
+    height: 80px;
+  }
+}
+
+.c-nav__btns {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  transform: translateY(-40px);
+}
+
+.c-nav__btn {
+  position: relative;
+  display: inline-block;
+  margin: 0 45px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+
+  @media screen and (max-width: $screen-tablet) {
+    margin: 20px;
+    border-width: 4px;
+  }
+  @media screen and (max-width: $screen-mobile) {
+    margin: 15px;
+    border-width: 4px;
+  }
+}
+
+.c-nav__link {
+  height: 100px;
+  width: 100px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: background-color, 0.4s, ease;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+
+  @media screen and (max-width: $screen-tablet) {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.c-nav__fa-icon {
+  color: $secondary-color;
+  line-height: 100px;
+  transition: color, 0.4s, ease;
+  
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  @media screen and (max-width: $screen-tablet) {
+    line-height: 60px;
+    font-size: 2em;
+  }
+}
+
+.c-nav__btn__text {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: bold;
+
+  @media screen and (max-width: $screen-tablet) {
+    font-size: 10px;
+    bottom: -30px;
+  }
+}

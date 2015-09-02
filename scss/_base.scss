@@ -14,3 +14,7 @@ html{
 a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
+
+*, *:after, *:before {
+  box-sizing: border-box; 
+}
