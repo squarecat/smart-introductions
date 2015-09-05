@@ -27,11 +27,11 @@
   border: 6px solid rgba(255, 255, 255, 0.4);
 
   @media screen and (max-width: $screen-tablet) {
-    margin: 20px;
+    margin: 0 20px;
     border-width: 4px;
   }
   @media screen and (max-width: $screen-mobile) {
-    margin: 15px;
+    margin: 0 15px;
     border-width: 4px;
   }
 }
@@ -45,7 +45,7 @@
   transition: background-color, 0.4s, ease;
 
   &:hover {
-    background-color: darken($secondary-color, 10%);
+    background-color: darken($secondary-color, 10%);    
   }
 
   @media screen and (max-width: $screen-tablet) {
@@ -59,10 +59,10 @@
   line-height: 100px;
   transition: color, 0.4s, ease;
   
-  &:hover {
+  .c-nav__link:hover & {
     color: rgba(255, 255, 255, 1);
   }
-
+  
   @media screen and (max-width: $screen-tablet) {
     line-height: 60px;
     font-size: 2em;

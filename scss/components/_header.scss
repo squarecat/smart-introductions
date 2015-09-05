@@ -24,15 +24,51 @@
 
 .c-header__links {
   float: right;
-  margin: 80px 0 0 0;
+  margin: 65px 0 15px 0;
   padding: 0;
   list-style: none;
 }
 
 .c-header__link {
+  position: relative;
   display: inline-block;
+  padding: 20px 0;
 
   a {
     padding: 30px 5px;
+    color: $secondary-lowlight;
+  }
+}
+
+.c-header__link:hover {
+  a {
+    color: darken($secondary-lowlight, 30%);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    background-color: $secondary-color;
+    height: 5px;
+  }
+}
+
+.c-header__link--active {
+
+  a {
+    color: darken($secondary-lowlight, 30%);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    background-color: $secondary-color;
+    height: 5px;
   }
 }

@@ -64,14 +64,39 @@ a, a:visited, a:hover, a:active {
 
 .c-header__links {
   float: right;
-  margin: 80px 0 0 0;
+  margin: 65px 0 15px 0;
   padding: 0;
   list-style: none; }
 
 .c-header__link {
-  display: inline-block; }
+  position: relative;
+  display: inline-block;
+  padding: 20px 0; }
   .c-header__link a {
-    padding: 30px 5px; }
+    padding: 30px 5px;
+    color: #4a4a4a; }
+
+.c-header__link:hover a {
+  color: black; }
+.c-header__link:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  background-color: #676666;
+  height: 5px; }
+
+.c-header__link--active a {
+  color: black; }
+.c-header__link--active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  background-color: #676666;
+  height: 5px; }
 
 .c-nav {
   position: absolute;
@@ -99,11 +124,11 @@ a, a:visited, a:hover, a:active {
   border: 6px solid rgba(255, 255, 255, 0.4); }
   @media screen and (max-width: 768px) {
     .c-nav__btn {
-      margin: 20px;
+      margin: 0 20px;
       border-width: 4px; } }
   @media screen and (max-width: 320px) {
     .c-nav__btn {
-      margin: 15px;
+      margin: 0 15px;
       border-width: 4px; } }
 
 .c-nav__link {
@@ -124,7 +149,7 @@ a, a:visited, a:hover, a:active {
   color: #676666;
   line-height: 100px;
   transition: color, 0.4s, ease; }
-  .c-nav__fa-icon:hover {
+  .c-nav__link:hover .c-nav__fa-icon {
     color: white; }
   @media screen and (max-width: 768px) {
     .c-nav__fa-icon {
