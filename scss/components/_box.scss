@@ -1,0 +1,32 @@
+.c-box {
+  background-color: rgba($color-white, 0.7);
+  border: 2px solid #edf0f1;
+  border-radius: 3px;
+  padding: 5px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.c-box__column {
+  float: left;
+}
+
+.c-box__column--left {
+  width: 35%;
+}
+
+.c-box__column--right {
+  width: 65%;
+  padding: 20px 50px;
+}
+
+.c-box__title {
+  font-family: $roboto-font;
+  color: $primary-color;
+  font-size: 2.2rem;
+  font-weight: 100;
+}

@@ -7,7 +7,6 @@
   src: url("../fonts/Uni Sans Heavy.otf") format("opentype"); }
 html {
   font-size: 16px;
-  font-family: "UniSans", sans-serif;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   height: 100%;
@@ -16,6 +15,9 @@ html {
     html {
       min-height: 550px; } }
 
+body {
+  border-top: 4px solid #e82618; }
+
 a, a:visited, a:hover, a:active {
   text-decoration: none; }
 
@@ -23,7 +25,6 @@ a, a:visited, a:hover, a:active {
   box-sizing: border-box; }
 
 .btn {
-  font-family: "UniSansBold";
   letter-spacing: 1px; }
 
 .btn--grey {
@@ -38,6 +39,13 @@ a, a:visited, a:hover, a:active {
   .btn--red:hover {
     background-color: #ba1e13; }
 
+.u-content {
+  padding-top: 50px; }
+  .u-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .u-container {
   width: 950px;
   margin: 0 auto; }
@@ -49,7 +57,7 @@ a, a:visited, a:hover, a:active {
   right: 0;
   width: 100%;
   height: 150px;
-  background-color: #f8fafb; }
+  background-color: #fbfcfd; }
 
 .c-header__inner {
   position: relative;
@@ -208,12 +216,37 @@ a, a:visited, a:hover, a:active {
       font-size: 10px;
       bottom: -30px; } }
 
+.c-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #edf0f1;
+  border-radius: 3px;
+  padding: 5px; }
+  .c-box:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.c-box__column {
+  float: left; }
+
+.c-box__column--left {
+  width: 35%; }
+
+.c-box__column--right {
+  width: 65%;
+  padding: 20px 50px; }
+
+.c-box__title {
+  font-family: "Roboto", sans-serif;
+  color: #e82618;
+  font-size: 2.2rem;
+  font-weight: 100; }
+
 .landing {
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  min-height: 100%;
-  border-top: 4px solid #e82618; }
+  min-height: 100%; }
 
 .landing::after {
   content: "";
@@ -279,7 +312,7 @@ a, a:visited, a:hover, a:active {
   position: relative;
   width: 100%;
   min-height: 100%;
-  border-top: 4px solid #e82618; }
+  padding-top: 150px; }
 
 .clients::after {
   content: "";
@@ -292,5 +325,12 @@ a, a:visited, a:hover, a:active {
   bottom: 0;
   position: absolute;
   z-index: -1; }
+
+.clients-img-wrapper {
+  background-image: url("../img/about-us-img.png");
+  background-size: cover;
+  height: 100%;
+  min-height: 300px;
+  background-position: center center; }
 
 /*# sourceMappingURL=main.css.map */

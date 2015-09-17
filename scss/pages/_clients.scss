@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   min-height: 100%;
-  border-top: 4px solid $primary-color;
+  padding-top: 150px;
 }
 
 .clients::after {
@@ -17,4 +17,12 @@
   bottom: 0;
   position: absolute;
   z-index: -1;
+}
+
+.clients-img-wrapper {
+  background-image: url("../img/about-us-img.png");
+  background-size: cover;
+  height: 100%;
+  min-height: 300px; // TODO revisit this 
+  background-position: center center;
 }

@@ -1,0 +1,9 @@
+.u-content {
+  padding-top: 50px; // TODO change this to be 50% top?
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
