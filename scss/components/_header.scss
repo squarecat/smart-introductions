@@ -5,10 +5,11 @@
   right: 0;
   width: 100%;
   height: 150px;
-  background-color: white;
+  background-color: #f8fafb;
 }
 
 .c-header__inner {
+  position: relative;
   height: 100%;
 }
 
@@ -37,6 +38,18 @@
   a {
     padding: 30px 5px;
     color: $secondary-lowlight;
+    transition: color .4s ease;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    background-color: transparent;
+    height: 5px;
+    transition: background-color .4s ease;
   }
 }
 
@@ -46,13 +59,7 @@
   }
 
   &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 5px;
-    right: 5px;
     background-color: $secondary-color;
-    height: 5px;
   }
 }
 
@@ -70,5 +77,47 @@
     right: 5px;
     background-color: $secondary-color;
     height: 5px;
+  }
+}
+
+.c-header__links-upper {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-header__link-upper {
+  font-family: "UniSansBold";
+  display: inline-block;
+  margin-left: 5px;
+  text-align: center;
+  width: 130px;
+  border: 1px solid #ecedee;
+  border-top-width: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: $color-white;
+  transition: background 0.4s ease-in-out;
+  a {
+    display: block;
+    color: $secondary-color;
+    padding: 10px 20px;
+  }
+  &:hover {
+    background-color: darken( $color-white, 5% );
+  }
+}
+
+.c-header__link-upper--active {
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  a {
+    color: $color-white;
+  }
+  &:hover {
+    background-color: darken( $primary-color, 10% );
   }
 }
