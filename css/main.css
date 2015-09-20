@@ -255,7 +255,8 @@ a, a:visited, a:hover, a:active {
   height: calc(100vh - 150px - 120px - 90px); }
   @media screen and (max-width: 768px) {
     .c-box {
-      flex-direction: column; } }
+      flex-direction: column;
+      height: auto; } }
   .c-box:after {
     content: "";
     display: table;
