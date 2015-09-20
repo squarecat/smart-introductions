@@ -1,0 +1,90 @@
+.smartway__links-wrapper {
+  background-color: white;
+  border-right: 2px solid #edf0f1;
+}
+
+.smartway__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.smartway__link {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  height: 40px;
+  transition: height .4s ease;
+
+  a {
+    padding-left: 15px;
+    display: block;
+    color: white;
+    line-height: 40px;
+  }
+}
+
+.smartway__link--active {
+  height: 250px;
+}
+
+.smartway__link__header {
+  position: relative;
+  font-family: "UniSansBold";
+  background-color: $secondary-color;
+  border-radius: 3px;
+  transition: color .4s ease;
+
+  a:after {
+    content: "\f054";
+    font-family: "FontAwesome";
+    position: absolute;
+    background-color: $secondary-dark;
+    color: $secondary-color;
+    line-height: 40px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 45px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    pointer-events: none;
+  }
+  
+  &:hover {
+    background-color: lighten($secondary-color, 5%);
+    color: lighten($secondary-color, 5%);
+    a:after {
+      background-color: lighten($secondary-dark, 5%);
+    }
+  }
+}
+
+.smartway__link--active .smartway__link__header {
+  background-color: $primary-color;
+
+  a:after {
+    content: "\f078";
+    background-color: $primary-dark;
+    color: $primary-color;
+  }
+
+  &:hover {
+    background-color: lighten($primary-color, 5%);
+    color: lighten($primary-color, 5%);
+
+    a:after {
+      background-color: lighten($primary-dark, 5%);
+    }
+  }
+}
+
+.smartway__link__content {
+  padding: 15px;
+  text-align: justify;
+  color: lighten($secondary-color, 30%);
+  font-style: italic;
+  height: 200px;
+  overflow: scroll;
+}

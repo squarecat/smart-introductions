@@ -2,6 +2,7 @@
 @import 'base';
 @import 'buttons';
 
+@import 'utils/page-body';
 @import 'utils/content';
 @import 'utils/container';
 
@@ -11,3 +12,5 @@
 
 @import 'pages/landing';
 @import 'pages/clients';
+@import 'pages/smartway';
+// @import 'pages/candidates';

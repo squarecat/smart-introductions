@@ -25,7 +25,7 @@
 
 .c-header__links {
   float: right;
-  margin: 65px 0 15px 0;
+  margin: 65px 20px 15px 0;
   padding: 0;
   list-style: none;
 }
@@ -80,6 +80,20 @@
   }
 }
 
+@media screen and (max-width: $header-max) {
+  .c-header__link {
+    display: none;
+    text-align: center;
+  }
+
+  .c-header__link--active {
+    display: block;
+  }
+}
+
+//---------------------------------------------------
+// Upper Client and Candiate links
+//---------------------------------------------------
 .c-header__links-upper {
   position: absolute;
   top: -1px;
