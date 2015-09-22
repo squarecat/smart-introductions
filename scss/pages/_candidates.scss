@@ -1,0 +1,21 @@
+.candidates {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+.candidates::after {
+  content: "";
+  background-image: url("../img/main_background.png");
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}

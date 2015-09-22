@@ -1,0 +1,46 @@
+.c-box {
+  background-color: rgba($color-white, 0.7);
+  border: 2px solid #edf0f1;
+  border-radius: 3px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  min-height: 535px;
+  height: calc(100vh - 150px - 120px - 90px);
+
+  
+  @media screen and (max-width: $screen-tablet) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.c-box__column {
+  padding: 8px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.c-box__column--left {
+  flex: 1;
+  overflow: scroll;
+}
+
+.c-box__column--right {
+  flex: 1;
+  padding: 20px 50px;
+}
+
+.c-box__title {
+  font-family: $roboto-font;
+  color: $primary-color;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: 10px 0;
+}

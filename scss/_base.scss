@@ -1,6 +1,6 @@
 html{
   font-size: 16px;
-  font-family: "UniSans", sans-serif;
+  // font-family: "UniSans", sans-serif;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   height: 100%;
@@ -9,6 +9,10 @@ html{
   @media screen and (max-width: $screen-tablet) {
     min-height: 550px;
   }
+}
+
+body {
+  border-top: 4px solid $primary-color;
 }
 
 a, a:visited, a:hover, a:active {
