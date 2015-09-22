@@ -39,7 +39,7 @@ a, a:visited, a:hover, a:active {
   .btn--red:hover {
     background-color: #ba1e13; }
 
-.page-body {
+.page {
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -47,7 +47,7 @@ a, a:visited, a:hover, a:active {
   padding-top: 150px;
   padding-bottom: 120px; }
 
-.page-body::after {
+.page::after {
   content: "";
   background-image: url("../img/main_background.png");
   background-size: cover;
@@ -138,7 +138,33 @@ a, a:visited, a:hover, a:active {
     text-align: center; }
 
   .c-header__link--active {
-    display: block; } }
+    display: block;
+    padding-right: 20px; }
+    .c-header__link--active:before {
+      content: "\f078";
+      position: absolute;
+      font-family: FontAwesome;
+      right: 0; } }
+.c-header__select {
+  display: none; }
+  @media screen and (max-width: 880px) {
+    .c-header__select {
+      position: absolute;
+      top: 80px;
+      right: 10px;
+      display: block;
+      height: 40px;
+      width: 140px;
+      outline: 0;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      filter: alpha(opacity=0);
+      visibility: visible;
+      border: 0;
+      line-height: 40px;
+      opacity: 0; } }
+
 .c-header__links-upper {
   position: absolute;
   top: -1px;
@@ -251,7 +277,7 @@ a, a:visited, a:hover, a:active {
   margin: 20px;
   display: flex;
   flex-direction: row;
-  min-height: 535px;
+  min-height: 540px;
   height: calc(100vh - 150px - 120px - 90px); }
   @media screen and (max-width: 768px) {
     .c-box {
@@ -424,5 +450,7 @@ a, a:visited, a:hover, a:active {
   font-style: italic;
   height: 200px;
   overflow: scroll; }
+  .smartway__link__content p {
+    margin: 0; }
 
 /*# sourceMappingURL=main.css.map */
