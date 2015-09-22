@@ -24,12 +24,12 @@
 .c-box__column {
   padding: 8px;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .c-box__column--left {
   flex: 1;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .c-box__column--right {

@@ -291,11 +291,11 @@ a, a:visited, a:hover, a:active {
 .c-box__column {
   padding: 8px;
   height: 100%;
-  overflow: scroll; }
+  overflow: auto; }
 
 .c-box__column--left {
   flex: 1;
-  overflow: scroll; }
+  overflow: auto; }
 
 .c-box__column--right {
   flex: 1;
@@ -449,7 +449,7 @@ a, a:visited, a:hover, a:active {
   color: #b3b3b3;
   font-style: italic;
   height: 200px;
-  overflow: scroll; }
+  overflow: auto; }
   .smartway__link__content p {
     margin: 0; }
 
