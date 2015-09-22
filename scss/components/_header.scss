@@ -30,7 +30,7 @@
   list-style: none;
 }
 
-.c-header__link {
+.c-header__links .menu-item {
   position: relative;
   display: inline-block;
   padding: 20px 0;
@@ -53,7 +53,7 @@
   }
 }
 
-.c-header__link:hover {
+.c-header__links .menu-item:hover {
   a {
     color: darken($secondary-lowlight, 30%);
   }
@@ -63,7 +63,7 @@
   }
 }
 
-.c-header__link--active {
+.c-header__links .current-menu-item {
 
   a {
     color: darken($secondary-lowlight, 10%);
