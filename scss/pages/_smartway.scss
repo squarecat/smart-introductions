@@ -86,7 +86,7 @@
   color: lighten($secondary-color, 30%);
   font-style: italic;
   height: 200px;
-  overflow: scroll;
+  overflow: auto;
   p {
     margin: 0;
   }
