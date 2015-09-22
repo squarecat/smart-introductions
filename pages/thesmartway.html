@@ -14,7 +14,7 @@
     <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
 
   </head>
-  <body class="page-body">
+  <body class="page">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -24,13 +24,21 @@
           <a href="/"><img src="/img/logo.png" class="c-header__logo"></a>
         </div>
         <ul class="c-header__links">
-          <li class="c-header__link"><a href="/pages/clients">About Us</a></li>
-          <li class="c-header__link c-header__link--active"><a>The Smart Way</a></li>
-          <li class="c-header__link"><a href="#">News</a></li>
-          <li class="c-header__link"><a href="#">Salary Survey</a></li>
-          <li class="c-header__link"><a href="#">Diversity & CSR</a></li>
-          <li class="c-header__link"><a href="#">Contact Us</a></li>
+          <li class="c-header__link"><a href="about">About Us</a></li>
+          <li class="c-header__link c-header__link--active"><a href="#smart">The Smart Way</a></li>
+          <li class="c-header__link"><a href="#news">News</a></li>
+          <li class="c-header__link"><a href="#salary">Salary Survey</a></li>
+          <li class="c-header__link"><a href="#diversity">Diversity & CSR</a></li>
+          <li class="c-header__link"><a href="#contact">Contact Us</a></li>
         </ul>
+        <select class="c-header__select">
+          <option value="1">About Us</option>
+          <option value="2" selected="selected">The Smart Way</option>
+          <option value="3">News</option>
+          <option value="4">Salary Survey</option>
+          <option value="5">Diversity & CSR</option>
+          <option value="6">Contact Us</option>
+        </select>
         <ul class="c-header__links-upper">
           <li class="c-header__link-upper c-header__link-upper--active"><a href="/pages/clients">Client</a></li>
           <li class="c-header__link-upper"><a href="/pages/candidates">Candidate</a></li>
@@ -115,6 +123,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="/js/plugins.js"></script>
+    <script src="/js/header.js"></script>
     <script src="/js/smartway.js"></script>
     <script src="/js/main.js"></script>
 

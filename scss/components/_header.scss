@@ -88,6 +88,36 @@
 
   .c-header__link--active {
     display: block;
+    padding-right: 20px;
+    
+    &:before {
+      content: "\f078"; 
+      position: absolute;
+      font-family: FontAwesome;
+      right: 0;
+    }
+  }
+}
+
+.c-header__select {
+  display: none;
+
+  @media screen and (max-width: $header-max) {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    display: block;
+    height: 40px;
+    width: 140px;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    visibility: visible;
+    border: 0;
+    line-height: 40px;
+    opacity: 0;
   }
 }
 

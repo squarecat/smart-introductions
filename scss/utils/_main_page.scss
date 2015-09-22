@@ -1,4 +1,4 @@
-.page-body {
+.page {
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -7,7 +7,7 @@
   padding-bottom: 120px;
 }
 
-.page-body::after {
+.page::after {
   content: "";
   background-image: url("../img/main_background.png");
   background-size: cover;
