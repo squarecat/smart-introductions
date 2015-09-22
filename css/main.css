@@ -122,7 +122,7 @@ a, a:visited, a:hover, a:active {
   background-color: #676666; }
 
 .c-header__link--active a {
-  color: black; }
+  color: #313131; }
 .c-header__link--active:after {
   content: "";
   position: absolute;
@@ -142,6 +142,7 @@ a, a:visited, a:hover, a:active {
     padding-right: 20px; }
     .c-header__link--active:before {
       content: "\f078";
+      color: #313131;
       position: absolute;
       font-family: FontAwesome;
       right: 0; } }

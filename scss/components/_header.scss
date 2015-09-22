@@ -66,7 +66,7 @@
 .c-header__link--active {
 
   a {
-    color: darken($secondary-lowlight, 30%);
+    color: darken($secondary-lowlight, 10%);
   }
 
   &:after {
@@ -92,6 +92,7 @@
     
     &:before {
       content: "\f078"; 
+      color: darken($secondary-lowlight, 10%);
       position: absolute;
       font-family: FontAwesome;
       right: 0;
