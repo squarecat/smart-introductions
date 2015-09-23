@@ -5,7 +5,6 @@
  * @package Simon WP Framework
  * @since Simon WP Framework 1.0
  */
-add_filter('show_admin_bar', '__return_false');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -21,6 +20,17 @@ add_filter('show_admin_bar', '__return_false');
 <?php wp_head(); ?>
 
 <link rel="stylesheet" type="text/css" href="/css/main.css">
+<style>
+  #wpadminbar {
+    display: none !important;
+  }
+  html { margin-top: 0 !important; }
+    * html body { margin-top: 0 !important; }
+    @media screen and ( max-width: 782px ) {
+      html { margin-top: 0 !important; }
+      * html body { margin-top: 0 !important; }
+    }
+</style>
 </head>
 <body <?php body_class(); ?>>
 
@@ -35,7 +45,7 @@ add_filter('show_admin_bar', '__return_false');
     <div class="c-header__logo-container">
       <a href="/"><img src="/img/logo.png" class="c-header__logo"></a>
     </div>
-    <ul class="c-header__links">
+    <!-- <ul class="c-header__links">
       <li class="c-header__link c-header__link--active"><a href="#about">About Us</a></li>
       <li class="c-header__link"><a href="#smart">The Smart Way</a></li>
       <li class="c-header__link"><a href="#news">News</a></li>
@@ -50,12 +60,18 @@ add_filter('show_admin_bar', '__return_false');
       <option value="4">Salary Survey</option>
       <option value="5">Diversity & CSR</option>
       <option value="6">Contact Us</option>
-    </select>
+    </select> -->
       <?php
-        // $defaults = array(
-        //   'menu_class'      => 'c-header__links'
-        // );
-        // wp_nav_menu($defaults);
+        $defaults = array(
+          'menu_class' => 'c-header__links'
+        );
+
+        if ( is_client() ) {
+          wp_nav_menu($defaults);
+        }
+        else {
+          wp_nav_menu($defaults);
+        }
       ?>
       <!-- <li class="c-header__link c-header__link--active"><a href>About Us</a></li>
       <li class="c-header__link"><a href>The Smart Way</a></li>

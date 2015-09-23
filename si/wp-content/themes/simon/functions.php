@@ -8,14 +8,18 @@
 // Set Content Width
 if ( ! isset( $content_width ) )
 	$content_width = 960;
-	
+
+function is_client() {
+  return true;
+}
+
 function simonwpframework_setup() {
 	// Add RSS links to <head> section
 		add_theme_support( 'automatic-feed-links' );
-			
+
 	// Add Custom BG
 		add_theme_support( 'custom-background' );
-	
+
 	// Enable post thumbnails
 		add_theme_support('post-thumbnails');
 		set_post_thumbnail_size(280, 280, true);
@@ -25,9 +29,9 @@ function simonwpframework_setup() {
 
 	// Editor Support
 		add_editor_style();
-		
+
 	// Menu Support
-		register_nav_menu('header-menu',__( 'Header Menu' ));		
+		register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'after_setup_theme', 'simonwpframework_setup' );
 
@@ -46,7 +50,7 @@ function simonwpframework_scripts() {
 		wp_enqueue_script( 'flow-type', get_template_directory_uri() . '/inc/js/flowtype.js' );
 }
 add_action( 'wp_enqueue_scripts', 'simonwpframework_scripts' );
-	
+
 // Add Bread Crumbs
 function simonwpframework_breadcrumb() {
 	echo bloginfo('name');
@@ -136,17 +140,17 @@ function simonwpframework_comment( $comment, $args, $depth ) {
 			?>
     </div>
     <!-- .comment-meta .commentmetadata -->
-    
+
     <div class="comment-body">
       <?php comment_text(); ?>
     </div>
     <div class="reply">
       <?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
     </div>
-    <!-- .reply --> 
+    <!-- .reply -->
   </div>
   <!-- #comment-##  -->
-  
+
   <?php
 			break;
 		case 'pingback'  :
@@ -163,5 +167,5 @@ function simonwpframework_comment( $comment, $args, $depth ) {
 	endswitch;
 }
 endif;
-	
+
 ?>
