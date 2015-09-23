@@ -25,6 +25,9 @@
   padding: 8px;
   height: 100%;
   overflow: auto;
+  &:empty {
+    display: none;
+  }
 }
 
 .c-box__column--left {
