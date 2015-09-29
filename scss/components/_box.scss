@@ -8,7 +8,6 @@
   min-height: 540px;
   height: calc(100vh - 150px - 120px - 90px);
 
-  
   @media screen and (max-width: $screen-tablet) {
     flex-direction: column;
     height: auto;
@@ -22,9 +21,9 @@
 }
 
 .c-box__column {
-  padding: 8px;
   height: 100%;
   overflow: auto;
+  padding: 8px;
   &:empty {
     display: none;
   }
