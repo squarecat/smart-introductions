@@ -1,5 +1,9 @@
 .u-content {
-  margin: 40px 0;
+  position: fixed;
+  right: 20px;
+  left: 20px;
+  top: 200px;
+  bottom: 210px;
 
   &:after {
     content: "";
