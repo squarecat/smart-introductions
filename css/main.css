@@ -104,15 +104,15 @@ a, a:visited, a:hover, a:active {
   padding: 0;
   list-style: none; }
 
-.c-header__links .menu-item {
+.c-header__link {
   position: relative;
   display: inline-block;
   padding: 20px 0; }
-  .c-header__links .menu-item a {
+  .c-header__link a {
     padding: 30px 5px;
     color: #4a4a4a;
     transition: color .4s ease; }
-  .c-header__links .menu-item:after {
+  .c-header__link:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -122,14 +122,14 @@ a, a:visited, a:hover, a:active {
     height: 5px;
     transition: background-color .4s ease; }
 
-.c-header__links .menu-item:hover a {
+.c-header__link:hover a {
   color: black; }
-.c-header__links .menu-item:hover:after {
+.c-header__link:hover:after {
   background-color: #676666; }
 
-.c-header__links .current-menu-item a {
+.c-header__link--active a {
   color: #313131; }
-.c-header__links .current-menu-item:after {
+.c-header__link--active:after {
   content: "";
   position: absolute;
   bottom: 0;
