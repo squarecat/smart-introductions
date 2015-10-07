@@ -1,15 +1,14 @@
 .c-nav {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
   height: 120px;
+  width: 100%;
   background: $secondary-color;
   border-bottom: 4px solid $secondary-lowlight;
 
-  @media screen and (max-width: $screen-tablet) {
-    height: 80px;
-  }
+  // @media screen and (max-width: $screen-tablet) {
+  //   height: 80px;
+  // }
 }
 
 .c-nav__btns {
@@ -26,14 +25,14 @@
   border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.4);
 
-  @media screen and (max-width: $screen-tablet) {
-    margin: 0 20px;
-    border-width: 4px;
-  }
-  @media screen and (max-width: $screen-mobile) {
-    margin: 0 15px;
-    border-width: 4px;
-  }
+  // @media screen and (max-width: $screen-tablet) {
+  //   margin: 0 20px;
+  //   border-width: 4px;
+  // }
+  // @media screen and (max-width: $screen-mobile) {
+  //   margin: 0 15px;
+  //   border-width: 4px;
+  // }
 }
 
 .c-nav__link {
@@ -45,28 +44,28 @@
   transition: background-color, 0.4s, ease;
 
   &:hover {
-    background-color: darken($secondary-color, 10%);    
+    background-color: darken($secondary-color, 10%);
   }
 
-  @media screen and (max-width: $screen-tablet) {
-    height: 60px;
-    width: 60px;
-  }
+  // @media screen and (max-width: $screen-tablet) {
+  //   height: 60px;
+  //   width: 60px;
+  // }
 }
 
 .c-nav__fa-icon {
   color: $secondary-color;
   line-height: 100px;
   transition: color, 0.4s, ease;
-  
+
   .c-nav__link:hover & {
     color: rgba(255, 255, 255, 1);
   }
-  
-  @media screen and (max-width: $screen-tablet) {
-    line-height: 60px;
-    font-size: 2em;
-  }
+
+  // @media screen and (max-width: $screen-tablet) {
+  //   line-height: 60px;
+  //   font-size: 2em;
+  // }
 }
 
 .c-nav__btn__text {
@@ -75,10 +74,12 @@
   left: 0;
   right: 0;
   color: white;
-  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
 
-  @media screen and (max-width: $screen-tablet) {
-    font-size: 10px;
-    bottom: -30px;
-  }
+  // @media screen and (max-width: $screen-tablet) {
+  //   font-size: 10px;
+  //   bottom: -30px;
+  // }
 }

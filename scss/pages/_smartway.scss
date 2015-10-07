@@ -1,6 +1,12 @@
-.smartway__links-wrapper {
+.smartway--left {
   background-color: white;
   border-right: 2px solid #edf0f1;
+  overflow: auto;
+  flex: 1;
+}
+
+.smartway--right {
+  flex: 1;
 }
 
 .smartway__links {
