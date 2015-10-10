@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Smart Introductions | Contact Us</title>
+    <title>Smart Introductions | Register</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+    
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -24,12 +24,11 @@
           <a href="/"><img src="/img/logo.png" class="c-header__logo"></a>
         </div>
         <ul class="c-header__links">
-          <li class="c-header__link"><a href="/pages/clients">About Us</a></li>
-          <li class="c-header__link"><a href="/pages/thesmartway">The Smart Way</a></li>
-          <li class="c-header__link"><a href="/pages/news">News</a></li>
-          <li class="c-header__link"><a href="/pages/salarysurvey">Salary Survey</a></li>
-          <li class="c-header__link"><a href="/pages/diversity">Diversity & CSR</a></li>
-          <li class="c-header__link c-header__link--active"><a href="/pages/contact">Contact Us</a></li>
+          <li class="c-header__link"><a href="#about">About Us</a></li>
+          <li class="c-header__link"><a href="#ourclients">Our Clients</a></li>
+          <li class="c-header__link"><a href="#salary">Salary Survey</a></li>
+          <li class="c-header__link c-header__link--active"><a href="#register">Register</a></li>
+          <li class="c-header__link"><a href="#contact">Contact Us</a></li>
         </ul>
         <select class="c-header__select">
           <option value="1">About Us</option>
@@ -40,67 +39,48 @@
           <option value="6" selected="selected">Contact Us</option>
         </select>
         <ul class="c-header__links-upper">
-          <li class="c-header__link-upper c-header__link-upper--active"><a href="/pages/clients">Client</a></li>
-          <li class="c-header__link-upper"><a href="/pages/candidates">Candidate</a></li>
+          <li class="c-header__link-upper"><a href="/pages/clients">Client</a></li>
+          <li class="c-header__link-upper c-header__link-upper--active"><a href="/pages/candidates">Candidate</a></li>
         </ul>
       </div>
     </div>
 
     <div class="u-container">
       <div class="u-content">
-        <div class="c-box contact-us-box">
-          <div class="c-box__column c-box__column--left"></div>
-          <div class="c-box__column c-box__column--right">
-            <h1 class="c-box__title">CONTACT US</h1>
-            <div class="c-box__content">
-
-              <div class="contact__social-popup">
-                <ul class="contact__links">
-                  <li class="contact__link">
-                    <a href="https://www.linkedin.com/profile/view?id=AAkAAAboI6IBftSNsEOS09g91HxByew-giQrqDA">
-                      <i class="fa fa-linkedin fa-lg fa-fw"></i>
-                    </a>
-                    Linked In
-                  </li>
-                  <li class="contact__link">
-                    <a href="#">
-                      <i class="fa fa-facebook fa-lg fa-fw"></i>
-                    </a>
-                    Facebook
-                  </li>
-                  <li class="contact__link">
-                    <a href="#">
-                      <i class="fa fa-twitter fa-lg fa-fw"></i>
-                    </a>
-                    Twitter
-                  </li>
-                </ul>
+        <div class="c-box">
+          <div class="c-box__column c-box__column--left">
+            <form>
+              <div class="c-form-group">
+                <label class="c-form__label" for="title"> Title: </label>
+                <select class="c-form__control" id="title" required>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Miss">Miss</option>
+                </select>
               </div>
-
-
-              <h2>Traditional</h2>
-              <ul class="contact__links">
-                <li class="contact__link">
-                  <a href="#">
-                    <i class="fa fa-phone fa-lg fa-fw"></i>
-                  </a>
-                  Call Us
-                </li>
-                <li class="contact__link">
-                  <a href="#">
-                    <i class="fa fa-book fa-lg fa-fw"></i>
-                  </a>
-                  Book A Call
-                </li>
-                <li class="contact__link">
-                  <a href="#">
-                    <i class="fa fa-envelope-o fa-lg fa-fw"></i>
-                  </a>
-                  Email Us
-                </li>
-              </ul>
-            </div>
+              <div class="c-form-group">
+                <label class="c-form__label" for="name"> Name: </label>
+                <input class="c-form__control" type="text" id="name" placeholder="Name" required>
+              </div>
+              <div class="c-form-group">
+                <label class="c-form__label" for="email"> Email: </label>
+                <input class="c-form__control" type="email" id="email" placeholder="Email Address" required>
+              </div>
+              <div class="c-form-group">
+                <label class="c-form__label" for="phone"> Phone: </label>
+                <input class="c-form__control" type="tel" id="phone" placeholder="Phone" required>
+              </div>
+              <div class="c-form-group">
+                <label class="c-form__label" for="file"> CV: </label>
+                <input class="c-form__control" type="file" id="file" placeholder="CV" required>
+              </div>
+              <div class="c-form-group">
+                <a class="c-form__btn c-form__btn--primary" type="submit">Submit</a>
+                <a class="c-form__btn c-form__btn--default" type="reset">Clear</a>
+              </div>
+            </form>
           </div>
+          <div class="c-box__column c-box__column--right"></div>
         </div>
       </div>
     </div>
