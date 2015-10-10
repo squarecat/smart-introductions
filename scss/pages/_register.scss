@@ -1,0 +1,23 @@
+.register__box {
+  overflow-y: auto;
+}
+
+.register__columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.register__title {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.register__column {
+  flex: 1;
+  padding: 20px;
+}
+
+.register__footer {
+  float: right;
+  padding-right: 20px;
+}

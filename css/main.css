@@ -65,7 +65,8 @@ a, a:visited, a:hover, a:active {
 .u-content {
   position: fixed;
   max-width: 1000px;
-  width: 1000px;
+  min-width: 768px;
+  width: 100%;
   right: auto;
   left: auto;
   top: 200px;
@@ -77,6 +78,7 @@ a, a:visited, a:hover, a:active {
 
 .u-container {
   max-width: 1000px;
+  min-width: 768px;
   margin: 0 auto; }
 
 .c-header {
@@ -212,6 +214,7 @@ a, a:visited, a:hover, a:active {
   bottom: 0;
   height: 120px;
   width: 100%;
+  min-width: 768px;
   background: #676666;
   border-bottom: 4px solid #4a4a4a; }
 
@@ -263,10 +266,6 @@ a, a:visited, a:hover, a:active {
   flex-direction: row;
   height: 100%;
   max-height: 100%; }
-  @media screen and (max-width: 768px) {
-    .c-box {
-      flex-direction: column;
-      height: auto; } }
   .c-box:after {
     content: "";
     display: table;
@@ -280,9 +279,6 @@ a, a:visited, a:hover, a:active {
 .c-box__column--left {
   flex: 2;
   height: 100%; }
-  @media screen and (max-width: 768px) {
-    .c-box__column--left {
-      box-sizing: content-box; } }
 
 .c-box__column--right {
   flex: 3;
@@ -295,6 +291,48 @@ a, a:visited, a:hover, a:active {
   font-size: 2.5rem;
   font-weight: 100;
   margin: 10px 0; }
+
+.c-form-group {
+  display: block;
+  margin-bottom: 15px; }
+
+.c-form__label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 6px;
+  font-weight: 700; }
+
+.c-form__control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  line-height: 34px;
+  color: #4a4a4a;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 3px; }
+
+.c-form__file-upload {
+  border: 3px dashed #cccccc;
+  border-radius: 3px;
+  color: #4a4a4a; }
+
+.c-form__btns {
+  margin-top: 10px; }
+
+.c-form__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 700; }
 
 .landing {
   box-sizing: border-box;
@@ -343,7 +381,7 @@ a, a:visited, a:hover, a:active {
   margin: 0 5px;
   padding: 20px 0;
   width: 220px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: white;
   border-radius: 3px; }
@@ -357,11 +395,16 @@ a, a:visited, a:hover, a:active {
 .smartway--left {
   background-color: white;
   border-right: 2px solid #edf0f1;
-  overflow: auto;
+  overflow: hidden;
   flex: 1; }
 
 .smartway--right {
   flex: 1; }
+
+.smartway__links-wrapper {
+  overflow-y: scroll;
+  height: 100%;
+  margin-right: -25px; }
 
 .smartway__links {
   list-style: none;
@@ -431,6 +474,25 @@ a, a:visited, a:hover, a:active {
   overflow: auto; }
   .smartway__link__content p {
     margin: 0; }
+
+.register__box {
+  overflow-y: auto; }
+
+.register__columns {
+  display: flex;
+  flex-direction: row; }
+
+.register__title {
+  padding-left: 20px;
+  padding-top: 20px; }
+
+.register__column {
+  flex: 1;
+  padding: 20px; }
+
+.register__footer {
+  float: right;
+  padding-right: 20px; }
 
 .contact__links {
   list-style: none;
