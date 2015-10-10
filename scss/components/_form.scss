@@ -1,0 +1,39 @@
+.c-form-group {
+  display: block;
+}
+
+.c-form__label {
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.c-form__control {
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.c-form__btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+.c-form__btn--default {
+  color: #fff;
+  background-color: $secondary-color;
+}
+
+.c-form__btn--primary {
+  color: #fff;
+  background-color: $primary-color;
+}
