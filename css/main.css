@@ -65,7 +65,8 @@ a, a:visited, a:hover, a:active {
 .u-content {
   position: fixed;
   max-width: 1000px;
-  width: 1000px;
+  min-width: 768px;
+  width: 100%;
   right: auto;
   left: auto;
   top: 200px;
@@ -77,6 +78,7 @@ a, a:visited, a:hover, a:active {
 
 .u-container {
   max-width: 1000px;
+  min-width: 768px;
   margin: 0 auto; }
 
 .c-header {
@@ -213,6 +215,7 @@ a, a:visited, a:hover, a:active {
   bottom: 0;
   height: 120px;
   width: 100%;
+  min-width: 768px;
   background: #676666;
   border-bottom: 4px solid #4a4a4a; }
 
@@ -264,10 +267,6 @@ a, a:visited, a:hover, a:active {
   flex-direction: row;
   height: 100%;
   max-height: 100%; }
-  @media screen and (max-width: 768px) {
-    .c-box {
-      flex-direction: column;
-      height: auto; } }
   .c-box:after {
     content: "";
     display: table;
@@ -281,9 +280,6 @@ a, a:visited, a:hover, a:active {
 .c-box__column--left {
   flex: 2;
   height: 100%; }
-  @media screen and (max-width: 768px) {
-    .c-box__column--left {
-      box-sizing: content-box; } }
 
 .c-box__column--right {
   flex: 3;
@@ -296,6 +292,40 @@ a, a:visited, a:hover, a:active {
   font-size: 2.5rem;
   font-weight: 100;
   margin: 10px 0; }
+
+.c-form-group {
+  display: block; }
+
+.c-form__label {
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: right; }
+
+.c-form__control {
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+
+.c-form__btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer; }
+
+.c-form__btn--default {
+  color: #fff;
+  background-color: #676666; }
+
+.c-form__btn--primary {
+  color: #fff;
+  background-color: #e82618; }
 
 .landing {
   box-sizing: border-box;
@@ -358,11 +388,16 @@ a, a:visited, a:hover, a:active {
 .smartway--left {
   background-color: white;
   border-right: 2px solid #edf0f1;
-  overflow: auto;
+  overflow: hidden;
   flex: 1; }
 
 .smartway--right {
   flex: 1; }
+
+.smartway__links-wrapper {
+  overflow-y: scroll;
+  height: 100%;
+  margin-right: -25px; }
 
 .smartway__links {
   list-style: none;
@@ -433,19 +468,62 @@ a, a:visited, a:hover, a:active {
   .smartway__link__content p {
     margin: 0; }
 
+.map-marker {
+  position: absolute;
+  left: 450px;
+  top: 220px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 200ms ease, transform 200ms ease; }
+  .map-marker:before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 26px;
+    width: 9px;
+    height: 9px;
+    background: #e82618;
+    border-radius: 50%; }
+  .map-marker:after {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 3px solid #e82618;
+    border-radius: 50%; }
+  .loaded .map-marker {
+    opacity: 1;
+    transform: translateY(0px); }
+
 .contact__links {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
-.contact__link {
-  padding: 10px; }
+.contact__link .fa {
+  float: left;
+  margin-right: 30px; }
+  .contact__link .fa:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #ecedee;
+    right: -18px;
+    height: 20px;
+    top: 20%; }
+.contact__link .fa-map-marker {
+  line-height: 35px; }
 
 .contact-us-box {
   position: relative; }
   .contact-us-box:before {
-    background: url("/img/map-background.png") center center;
-    opacity: 0.1;
+    background: url("/img/map-background-fade.png") center center;
+    background-size: cover;
+    opacity: 0.5;
     width: 100%;
     position: absolute;
     height: 100%;
@@ -453,13 +531,20 @@ a, a:visited, a:hover, a:active {
 
 .contact__social-popup {
   position: absolute;
-  left: 50%;
-  top: 25%;
-  width: 200px;
+  left: 450px;
+  top: 220px;
+  width: 330px;
   height: auto;
   color: #676666;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid #ecedee; }
+  background: white;
+  border: 1px solid rgba(103, 102, 102, 0.4);
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 200ms ease 200ms, transform 200ms ease 200ms; }
+  .loaded .contact__social-popup {
+    opacity: 1;
+    transform: translateX(0px); }
   .contact__social-popup:before, .contact__social-popup:after {
     content: "";
     position: absolute;
@@ -469,11 +554,18 @@ a, a:visited, a:hover, a:active {
     height: 10px;
     border: 10px solid;
     border-color: transparent;
-    border-right-color: rgba(255, 255, 255, 0.8); }
+    border-right-color: white; }
+  .contact__social-popup:before {
+    left: -21px;
+    height: 12px;
+    border-right-color: rgba(103, 102, 102, 0.4); }
 
 .contact__social-popup li {
-  padding: 20px;
   position: relative; }
+  .contact__social-popup li a {
+    display: block;
+    padding: 20px 25px;
+    color: #676666; }
   .contact__social-popup li:not(:last-child):after {
     height: 1px;
     background: #ecedee;
@@ -482,6 +574,38 @@ a, a:visited, a:hover, a:active {
     position: absolute;
     bottom: 0px;
     left: 10%; }
+
+.social__text {
+  margin-left: 10px;
+  padding-left: 20px;
+  position: relative; }
+
+.social__icons {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(103, 102, 102, 0.4);
+  border-left: 0; }
+
+.social__link {
+  background: white; }
+  .social__link a {
+    padding: 15px 10px;
+    display: block; }
+  .social__link a, .social__link a:hover, .social__link a:active {
+    color: #676666; }
+  .social__link .fa {
+    font-size: 25px; }
+
+a:hover .fa-twitter {
+  color: #55acee; }
+a:hover .fa-facebook {
+  color: #3b5998; }
+a:hover .fa-linkedin {
+  color: #0077b5; }
 
 .candidates {
   box-sizing: border-box;

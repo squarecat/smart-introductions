@@ -1,19 +1,80 @@
+$lowlight: rgba(#676666, 0.4);
+$twitter-blue: #55acee;
+$facebook-blue: #3b5998;
+$linkedin-blue: #0077b5;
+
+.map-marker {
+  position: absolute;
+  left: 450px;
+  top: 220px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 200ms ease, transform 200ms ease;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 26px;
+    width: 9px;
+    height: 9px;
+    background: #e82618;
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 3px solid #e82618;
+    border-radius: 50%;
+  }
+
+  .loaded & {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
 .contact__links {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .contact__link {
-  padding: 10px;
+  .fa {
+    float: left;
+    margin-right: 30px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background: #ecedee;
+      right: -18px;
+      height: 20px;
+      top: 20%;
+    }
+  }
+  .fa-map-marker {
+    line-height: 35px;
+  }
 }
 
 .contact-us-box {
   position: relative;
 
   &:before {
-    background: url("/img/map-background.png") center center;
-    opacity: 0.1;
+    background: url("/img/map-background-fade.png") center center;
+    background-size: cover;
+    opacity: 0.5;
     width: 100%;
     position: absolute;
     height: 100%;
@@ -23,13 +84,23 @@
 
 .contact__social-popup {
   position: absolute;
-  left: 50%;
-  top: 25%;
-  width: 200px;
+  left: 450px;
+  top: 220px;
+  width: 330px;
   height: auto;
   color: #676666;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid #ecedee;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid $lowlight;
+  border-radius: 3px;
+
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 200ms ease 200ms, transform 200ms ease 200ms;
+
+  .loaded & {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 
   &:before, &:after {
     content: "";
@@ -40,19 +111,27 @@
     height: 10px;
     border: 10px solid;
     border-color: transparent;
-    border-right-color: rgba(255, 255, 255, 0.8);
+    border-right-color: rgba(255, 255, 255, 1);
   }
 
-  &:after {
-
+  &:before {
+    left: -21px;
+    height: 12px;
+    border-right-color: $lowlight;
   }
 
 
 }
 
 .contact__social-popup li {
-  padding: 20px;
+
   position: relative;
+
+  a {
+    display: block;
+    padding: 20px 25px;
+    color: #676666;
+  }
 
   &:not(:last-child):after {
     height: 1px;
@@ -62,5 +141,49 @@
     position: absolute;
     bottom: 0px;
     left: 10%;
+  }
+}
+
+.social__text {
+  margin-left: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.social__icons {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(103, 102, 102, 0.4);
+  border-left: 0;
+}
+
+.social__link {
+  background: white;
+
+  a {
+    padding: 15px 10px;
+    display: block;
+  }
+  a, a:hover, a:active {
+    color: #676666;
+  }
+  .fa {
+    font-size: 25px;
+  }
+}
+
+a:hover {
+  .fa-twitter {
+    color: $twitter-blue;
+  }
+  .fa-facebook {
+    color: $facebook-blue;
+  }
+  .fa-linkedin {
+    color: $linkedin-blue;
   }
 }
