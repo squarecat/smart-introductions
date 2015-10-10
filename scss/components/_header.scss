@@ -28,7 +28,7 @@
   list-style: none;
 }
 
-.c-header__links .menu-item {
+.c-header__link {
   position: relative;
   display: inline-block;
   padding: 20px 0;
@@ -51,7 +51,7 @@
   }
 }
 
-.c-header__links .menu-item:hover {
+.c-header__link:hover {
   a {
     color: darken($secondary-lowlight, 30%);
   }
@@ -61,7 +61,7 @@
   }
 }
 
-.c-header__links .current-menu-item {
+.c-header__link--active {
 
   a {
     color: darken($secondary-lowlight, 10%);
@@ -89,7 +89,7 @@
     padding-right: 20px;
 
     &:before {
-      content: "\f078"; 
+      content: "\f078";
       color: darken($secondary-lowlight, 10%);
       position: absolute;
       font-family: FontAwesome;
