@@ -7,3 +7,60 @@
 .contact__link {
   padding: 10px;
 }
+
+.contact-us-box {
+  position: relative;
+
+  &:before {
+    background: url("/img/map-background.png") center center;
+    opacity: 0.1;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    content: "";
+  }
+}
+
+.contact__social-popup {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  width: 200px;
+  height: auto;
+  color: #676666;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ecedee;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border: 10px solid;
+    border-color: transparent;
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &:after {
+
+  }
+
+
+}
+
+.contact__social-popup li {
+  padding: 20px;
+  position: relative;
+
+  &:not(:last-child):after {
+    height: 1px;
+    background: #ecedee;
+    width: 80%;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+  }
+}
