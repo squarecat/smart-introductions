@@ -505,10 +505,10 @@ a, a:visited, a:hover, a:active {
   .map-marker:before {
     content: "";
     position: absolute;
-    left: -35px;
+    left: -34px;
     top: 26px;
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     background: #e82618;
     border-radius: 50%; }
   .map-marker:after {
@@ -546,10 +546,12 @@ a, a:visited, a:hover, a:active {
   line-height: 35px; }
 
 .contact-us-box {
-  position: relative; }
+  position: relative;
+  overflow-y: auto; }
   .contact-us-box:before {
     background: url("/img/map-background-fade.png") center center;
     background-size: cover;
+    background-position: top center;
     opacity: 0.5;
     width: 100%;
     position: absolute;
