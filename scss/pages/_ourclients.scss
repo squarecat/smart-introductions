@@ -1,0 +1,33 @@
+.ourclients__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.ourclients__img-wrap {
+  display: inline-block;
+  height: 70px;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  opacity: 0.8;
+  margin-right: 15px;
+  margin-bottom: 15px;
+
+  transition: filter 0.4s ease,
+              -webkit-filter 0.4s ease,
+              opacity 0.4s ease;
+
+  &:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    opacity: 1;
+  }
+}
+
+.ourclients__img {
+  height: 100%;
+}
