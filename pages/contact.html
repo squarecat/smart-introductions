@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
 
   </head>
   <body class="page">
@@ -49,54 +51,65 @@
     <div class="u-container">
       <div class="u-content">
         <div class="c-box contact-us-box">
-          <div class="c-box__column c-box__column--right">
+
+          <div class="c-box__column c-box__column--left">
             <h1 class="c-box__title">CONTACT US</h1>
+
+            <ul class="contact__links">
+              <li class="contact__link contact--phone">
+                <a href="#">
+                  <p class="social__text">(+44) 07934981367</p>
+                </a>
+              </li>
+              <li class="contact__link contact--email">
+                <a href="#">
+                  <!-- <i class="fa fa-envelope fa-lg fa-fw"></i> -->
+                  <p class="social__text">iain@smartintroductions.co.uk</p>
+                </a>
+              </li>
+              <li class="contact__link contact--facebook">
+                <a href>
+                  <!-- <i class="fa fa-facebook fa-lg fa-fw"></i> -->
+                  <p class="social__text">facebook.com/smartintroductions</p>
+                </a>
+              </li>
+              <li class="contact__link contact--twitter">
+                <a href="#">
+                  <!-- <i class="fa fa-twitter fa-lg fa-fw"></i> -->
+                  <p class="social__text">twitter.com/smartintroductions</p>
+                </a>
+              </li>
+              <li class="contact__link contact--linkedin">
+                <a href="https://www.linkedin.com/profile/view?id=AAkAAAboI6IBftSNsEOS09g91HxByew-giQrqDA">
+                  <!-- <i class="fa fa-linkedin fa-lg fa-fw"></i> -->
+                  <p class="social__text">linkedin.com/smartintroductions</p>
+                </a>
+              </li>
+              <li class="contact__link contact--address">
+                  <!-- <i class="fa fa-map-marker fa-lg fa-fw"></i> -->
+                <p class="social__text">Regina House, 124 Finchley Road, London</p>
+
+              </li>
+            </ul>
+         </div>
+          <div class="c-box__column c-box__column--right map-container-box">
+
             <div class="c-box__content">
 
-              <div class="map-marker"></div>
+              <div class="map-container js-mapbox" id="mapbox">
+              </div>
+
+             <!--  <div class="map-marker"></div>
               <div class="contact__social-popup">
-                <ul class="contact__links">
-                  <li class="contact__link">
-                    <a>
-                      <i class="fa fa-map-marker fa-lg fa-fw"></i>
-                      <div class="social__text">Regina House, 124 Finchley Road</div>
-                    </a>
-                  </li>
-                  <li class="contact__link">
-                    <a href="#">
-                      <i class="fa fa-phone fa-lg fa-fw"></i>
-                      <div class="social__text">(+44) 07934981367</div>
-                    </a>
-                  </li>
-                  <li class="contact__link">
-                    <a href="#">
-                      <i class="fa fa-envelope fa-lg fa-fw"></i>
-                      <div class="social__text">iain@smartintroductions.co.uk</div>
-                    </a>
-                  </li>
-                </ul>
+
               </div>
 
 
               <ul class="social__icons">
-                <li class="social__link">
-                  <a href>
-                    <i class="fa fa-facebook fa-lg fa-fw"></i>
-                  </a>
-                </li>
-                <li class="social__link">
-                  <a href="#">
-                    <i class="fa fa-twitter fa-lg fa-fw"></i>
-                  </a>
-                </li>
-                <li class="social__link">
-                  <a href="https://www.linkedin.com/profile/view?id=AAkAAAboI6IBftSNsEOS09g91HxByew-giQrqDA">
-                    <i class="fa fa-linkedin fa-lg fa-fw"></i>
-                  </a>
-                </li>
-              </ul>
 
-              </div>
+              </ul> -->
+
+              <!-- </div> -->
 
             </div>
           </div>

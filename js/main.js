@@ -32,4 +32,10 @@
     $('.register__form').clear()
   });
 
+  L.mapbox.accessToken = 'pk.eyJ1Ijoiaml2aW5ncyIsImEiOiJ6dzhhM1FJIn0.irjChrcnF1fcbBbDLvjVUQ';
+  // Create a map in the div #map
+
+  L.mapbox.map('mapbox', 'jivings.nn3l32eo')
+    .setView([51.543666, -0.17535200000000373], 13);
+
 })();

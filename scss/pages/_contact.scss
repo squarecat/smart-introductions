@@ -40,19 +40,34 @@ $linkedin-blue: #0077b5;
   }
 }
 
-
 .contact__links {
   list-style: none;
-  margin: 0;
+  margin: 1rem;
   padding: 0;
   position: relative;
 }
 
 .contact__link {
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 0;
+    line-height: 32px;
+    width: 20px;
+    text-align: center;
+  }
+  a {
+    color: black;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  height: 32px;
+  line-height: 32px;
+  margin: 10px auto;
   .fa {
-    float: left;
     margin-right: 30px;
-
+    color: black;
     &:after {
       content: "";
       position: absolute;
@@ -68,20 +83,27 @@ $linkedin-blue: #0077b5;
   }
 }
 
+.c-box__content {
+  height: calc(100% - 40px);
+}
+
+.map-container-box {
+  height: 100%;
+}
+
+.contact-us-box .c-box__column--left {
+  padding: 2rem;
+}
+
+.map-container {
+  margin: 20px;
+  border: 2px solid rgba(0,0,0,0.1);
+  height: 100%;
+}
+
 .contact-us-box {
   position: relative;
   overflow-y: auto;
-
-  &:before {
-    background: url("/img/map-background-fade.png") center center;
-    background-size: cover;
-    background-position: top center;
-    opacity: 0.5;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    content: "";
-  }
 }
 
 .contact__social-popup {
@@ -148,7 +170,7 @@ $linkedin-blue: #0077b5;
 
 .social__text {
   margin-left: 10px;
-  padding-left: 20px;
+  padding-left: 35px;
   position: relative;
 }
 
@@ -188,4 +210,30 @@ a:hover {
   .fa-linkedin {
     color: $linkedin-blue;
   }
+}
+
+
+.contact--phone:before {
+  font-family: 'FontAwesome';
+  content: "\f095";
+}
+.contact--email:before {
+  font-family: 'FontAwesome';
+  content: "\f0e0";
+}
+.contact--facebook:before {
+  font-family: 'FontAwesome';
+  content: "\f09a";
+}
+.contact--twitter:before {
+  font-family: 'FontAwesome';
+  content: "\f099";
+}
+.contact--linkedin:before {
+  font-family: 'FontAwesome';
+  content: "\f0e1";
+}
+.contact--address:before {
+  font-family: 'FontAwesome';
+  content: "\f041";
 }
