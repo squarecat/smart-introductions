@@ -1,16 +1,6 @@
 .u-content {
-  position: fixed;
-  max-width: 1000px;
-  min-width: 768px;
-  width: 100%;
-  right: auto;
-  left: auto;
-  top: 200px;
-  bottom: 210px;
+  @extend .t-clearfix;
 
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  margin: 50px 0 70px 0;
+
 }

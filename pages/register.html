@@ -15,95 +15,97 @@
 
   </head>
   <body class="page">
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div class="c-header">
-      <div class="c-header__inner u-container">
-        <div class="c-header__logo-container">
-          <a href="/"><img src="/img/logo.png" class="c-header__logo"></a>
+    <div class="wrapper">
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <div class="c-header">
+        <div class="c-header__inner u-container">
+          <div class="c-header__logo-container">
+            <a href="/"><img src="/img/logo.png" class="c-header__logo"></a>
+          </div>
+          <ul class="c-header__links">
+            <li class="c-header__link"><a href="/pages/clients">About Us</a></li>
+            <li class="c-header__link"><a href="/pages/ourclients">Our Clients</a></li>
+            <li class="c-header__link"><a href="/pages/salarysurvey">Salary Survey</a></li>
+            <li class="c-header__link c-header__link--active"><a href="/pages/register">Register</a></li>
+            <li class="c-header__link"><a href="/pages/contact">Contact Us</a></li>
+          </ul>
+          <select class="c-header__select">
+            <option value="1">About Us</option>
+            <option value="2">Our Clients</option>
+            <option value="3">Salary Survey</option>
+            <option value="4" selected="selected">Register</option>
+            <option value="5">Contact Us</option>
+          </select>
+          <ul class="c-header__links-upper">
+            <li class="c-header__link-upper"><a href="/pages/clients">Client</a></li>
+            <li class="c-header__link-upper c-header__link-upper--active"><a href="/pages/candidates">Candidate</a></li>
+          </ul>
         </div>
-        <ul class="c-header__links">
-          <li class="c-header__link"><a href="/pages/clients">About Us</a></li>
-          <li class="c-header__link"><a href="/pages/ourclients">Our Clients</a></li>
-          <li class="c-header__link"><a href="/pages/salarysurvey">Salary Survey</a></li>
-          <li class="c-header__link c-header__link--active"><a href="/pages/register">Register</a></li>
-          <li class="c-header__link"><a href="/pages/contact">Contact Us</a></li>
-        </ul>
-        <select class="c-header__select">
-          <option value="1">About Us</option>
-          <option value="2">Our Clients</option>
-          <option value="3">Salary Survey</option>
-          <option value="4" selected="selected">Register</option>
-          <option value="5">Contact Us</option>
-        </select>
-        <ul class="c-header__links-upper">
-          <li class="c-header__link-upper"><a href="/pages/clients">Client</a></li>
-          <li class="c-header__link-upper c-header__link-upper--active"><a href="/pages/candidates">Candidate</a></li>
-        </ul>
       </div>
-    </div>
 
-    <div class="u-container">
-      <div class="u-content">
-        <div class="c-box">
-          <div class="c-box__column c-box__column--left register__box">
-            <h1 class="c-box__title register__title">REGISTER</h1>
+      <div class="u-container">
+        <div class="u-content">
+          <div class="c-box">
+            <div class="c-box__column c-box__column--left register__box">
+              <h1 class="c-box__title register__title">REGISTER</h1>
 
-            <div class="register__columns">
-              <div class="register__column">
-                <form class="register__form">
-                  <div class="c-form-group">
-                    <label class="c-form__label" for="name">Name</label>
-                    <input class="c-form__control" type="text" id="name" placeholder="Name" required>
-                  </div>
-                  <div class="c-form-group">
-                    <label class="c-form__label" for="email">Email</label>
-                    <input class="c-form__control" type="email" id="email" placeholder="Email Address" required>
-                  </div>
-                  <div class="c-form-group">
-                    <label class="c-form__label" for="phone">Phone</label>
-                    <input class="c-form__control" type="tel" id="phone" placeholder="Phone" required>
-                  </div>
-                </form>
+              <div class="register__columns">
+                <div class="register__column">
+                  <form class="register__form">
+                    <div class="c-form-group">
+                      <label class="c-form__label" for="name">Name</label>
+                      <input class="c-form__control" type="text" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="c-form-group">
+                      <label class="c-form__label" for="email">Email</label>
+                      <input class="c-form__control" type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="c-form-group">
+                      <label class="c-form__label" for="phone">Phone</label>
+                      <input class="c-form__control" type="tel" id="phone" placeholder="Phone" required>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="register__column">
+                  <label class="c-form__label">Upload CV</label>
+                  <form class="dropzone c-form__file-upload" action="/file-upload"></form>
+                </div>
               </div>
 
-              <div class="register__column">
-                <label class="c-form__label">Upload CV</label>
-                <form class="dropzone c-form__file-upload" action="/file-upload"></form>
+              <div class="register__footer">
+                <div class="c-form__btns">
+                  <a class="c-form__btn btn--red js-register-submit" type="submit">Submit</a>
+                  <a class="c-form__btn btn--grey js-register-clear" type="reset">Clear</a>
+                </div>
               </div>
+
             </div>
-
-            <div class="register__footer">
-              <div class="c-form__btns">
-                <a class="c-form__btn btn--red js-register-submit" type="submit">Submit</a>
-                <a class="c-form__btn btn--grey js-register-clear" type="reset">Clear</a>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
     </div>
 
-    <div class="c-nav">
-      <ul class="c-nav__btns">
-        <li class="c-nav__btn">
-          <a href="#" class="c-nav__link">
-            <span class="fa fa-phone fa-fw fa-3x c-nav__fa-icon"></span>
-            <span class="c-nav__btn__text">Call Us</span>
+    <div class="c-footer">
+      <ul class="c-footer__btns">
+        <li class="c-footer__btn">
+          <a href="#" class="c-footer__link">
+            <span class="fa fa-phone fa-fw fa-3x c-footer__fa-icon"></span>
+            <span class="c-footer__btn__text">Call Us</span>
           </a>
         </li>
-        <li class="c-nav__btn">
-          <a href="#" class="c-nav__link">
-            <span class="fa fa-book fa-fw fa-3x c-nav__fa-icon"></span>
-            <span class="c-nav__btn__text">Book A Call</span>
+        <li class="c-footer__btn">
+          <a href="#" class="c-footer__link">
+            <span class="fa fa-book fa-fw fa-3x c-footer__fa-icon"></span>
+            <span class="c-footer__btn__text">Book A Call</span>
           </a>
         </li>
-        <li class="c-nav__btn">
-          <a href="#" class="c-nav__link">
-            <span class="fa fa-envelope-o fa-fw fa-3x c-nav__fa-icon"></span>
-            <span class="c-nav__btn__text">Email Us</span>
+        <li class="c-footer__btn">
+          <a href="#" class="c-footer__link">
+            <span class="fa fa-envelope-o fa-fw fa-3x c-footer__fa-icon"></span>
+            <span class="c-footer__btn__text">Email Us</span>
           </a>
         </li>
       </ul>
