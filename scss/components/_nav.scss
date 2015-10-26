@@ -6,10 +6,6 @@
   min-width: 768px;
   background: $secondary-color;
   border-bottom: 4px solid $secondary-lowlight;
-
-  // @media screen and (max-width: $screen-tablet) {
-  //   height: 80px;
-  // }
 }
 
 .c-nav__btns {
@@ -25,20 +21,11 @@
   margin: 0 45px;
   border-radius: 50%;
   border: 6px solid rgba(200, 200, 200, 0.49);
-
-  // @media screen and (max-width: $screen-tablet) {
-  //   margin: 0 20px;
-  //   border-width: 4px;
-  // }
-  // @media screen and (max-width: $screen-mobile) {
-  //   margin: 0 15px;
-  //   border-width: 4px;
-  // }
 }
 
 .c-nav__link {
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   display: block;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
@@ -47,40 +34,26 @@
   &:hover {
     background-color: darken($secondary-color, 10%);
   }
-
-  // @media screen and (max-width: $screen-tablet) {
-  //   height: 60px;
-  //   width: 60px;
-  // }
 }
 
 .c-nav__fa-icon {
   color: $secondary-color;
-  line-height: 100px;
+  line-height: 90px;
   transition: color, 0.4s, ease;
+  font-size: 2.6em;
 
   .c-nav__link:hover & {
     color: rgba(255, 255, 255, 1);
   }
-
-  // @media screen and (max-width: $screen-tablet) {
-  //   line-height: 60px;
-  //   font-size: 2em;
-  // }
 }
 
 .c-nav__btn__text {
   position: absolute;
   bottom: -40px;
-  left: 0;
-  right: 0;
+  left: -10px;
+  right: -10px;
   color: white;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 13px;
-
-  // @media screen and (max-width: $screen-tablet) {
-  //   font-size: 10px;
-  //   bottom: -30px;
-  // }
 }

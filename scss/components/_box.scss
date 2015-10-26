@@ -15,6 +15,7 @@
 }
 
 .c-box__column {
+  position: relative;
   padding: 8px;
   &:empty {
     display: none;
