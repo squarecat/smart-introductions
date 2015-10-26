@@ -44,11 +44,20 @@ a, a:visited, a:hover, a:active {
   .btn--red:hover {
     background-color: #ba1e13; }
 
+.t-clearfix:after, .u-content:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .page {
   box-sizing: border-box;
   position: relative;
   width: 100%;
   height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  position: relative; }
 
 .page::after {
   content: "";
@@ -63,28 +72,15 @@ a, a:visited, a:hover, a:active {
   z-index: -1; }
 
 .u-content {
-  position: fixed;
-  max-width: 1000px;
-  min-width: 768px;
-  width: 100%;
-  right: auto;
-  left: auto;
-  top: 200px;
-  bottom: 210px; }
-  .u-content:after {
-    content: "";
-    display: table;
-    clear: both; }
+  margin: 50px 0 70px 0; }
 
 .u-container {
   max-width: 1000px;
   min-width: 768px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 125px; }
 
 .c-header {
-  position: fixed;
-  top: 4px;
-  width: 100%;
   height: 130px;
   background-color: #fbfcfd;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
@@ -210,47 +206,48 @@ a, a:visited, a:hover, a:active {
   .c-header__link-upper--active:hover {
     background-color: #ba1e13; }
 
-.c-nav {
-  position: fixed;
+.c-footer {
+  position: absolute;
   bottom: 0;
-  height: 120px;
+  left: 0;
   width: 100%;
+  height: 120px;
   min-width: 768px;
   background: #676666;
   border-bottom: 4px solid #4a4a4a; }
 
-.c-nav__btns {
+.c-footer__btns {
   text-align: center;
   padding: 0;
   margin: 0;
   transform: translateY(-40px); }
 
-.c-nav__btn {
+.c-footer__btn {
   position: relative;
   display: inline-block;
   margin: 0 45px;
   border-radius: 50%;
   border: 6px solid rgba(200, 200, 200, 0.49); }
 
-.c-nav__link {
+.c-footer__link {
   height: 90px;
   width: 90px;
   display: block;
   background-color: white;
   border-radius: 50%;
   transition: background-color, 0.4s, ease; }
-  .c-nav__link:hover {
+  .c-footer__link:hover {
     background-color: #4d4d4d; }
 
-.c-nav__fa-icon {
+.c-footer__fa-icon {
   color: #676666;
   line-height: 90px;
   transition: color, 0.4s, ease;
   font-size: 2.6em; }
-  .c-nav__link:hover .c-nav__fa-icon {
+  .c-footer__link:hover .c-footer__fa-icon {
     color: white; }
 
-.c-nav__btn__text {
+.c-footer__btn__text {
   position: absolute;
   bottom: -40px;
   left: -10px;

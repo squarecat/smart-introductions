@@ -2,12 +2,14 @@
 @import 'base';
 @import 'buttons';
 
+@import 'trumps/clearfix.trump';
+
 @import 'utils/main_page';
 @import 'utils/content';
 @import 'utils/container';
 
 @import 'components/header';
-@import 'components/nav';
+@import 'components/footer';
 @import 'components/box';
 @import 'components/form';
 
