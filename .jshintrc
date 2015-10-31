@@ -1,0 +1,16 @@
+{
+  "eqeqeq": true,
+  "indent": 2,
+  "lastsemic": false,
+  "quotmark": true,
+  "strict": true,
+  "undef": true,
+
+  "browser": true,
+  "globals": {
+      "$": true,
+      "jQuery": true,
+      "console": true,
+      "module": true
+  }
+}

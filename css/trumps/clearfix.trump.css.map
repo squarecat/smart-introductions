@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACE,iBAAQ;EACN,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI",
-"sources": ["../../scss/trumps/clearfix.trump.scss"],
-"names": [],
-"file": "clearfix.trump.css"
-}
