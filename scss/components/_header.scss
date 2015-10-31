@@ -11,7 +11,7 @@
 
 .c-header__logo-container {
   float: left;
-  height: 100%;
+  height: 130px;
   padding: 24px;
 }
 
@@ -34,7 +34,7 @@
   a {
     padding: 30px 5px;
     color: $secondary-lowlight;
-    transition: color .4s ease;
+    transition: color 0.2s ease;
   }
 
   &:after {
@@ -45,7 +45,7 @@
     right: 5px;
     background-color: transparent;
     height: 5px;
-    transition: background-color .4s ease;
+    transition: background-color 0.2s ease;
   }
 }
 
@@ -73,6 +73,9 @@
     right: 5px;
     background-color: $secondary-color;
     height: 5px;
+    @media screen and (max-width: $header-max) {
+      right: 0;
+    }
   }
 }
 
@@ -88,7 +91,7 @@
 
     &:before {
       content: "\f078";
-      color: darken($secondary-lowlight, 10%);
+      color: darken($secondary-lowlight, 5%);
       position: absolute;
       font-family: FontAwesome;
       right: 0;
@@ -131,7 +134,7 @@
 }
 
 .c-header__link-upper {
-  font-family: "UniSansBold";
+  font-family: $font-unisans-bold;
   display: inline-block;
   margin-left: 5px;
   text-align: center;
@@ -141,7 +144,7 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   background-color: $color-white;
-  transition: background 0.4s ease-in-out;
+  transition: background 00.2s ease-in-out;
   a {
     display: block;
     color: $secondary-color;

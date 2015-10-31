@@ -5,7 +5,7 @@
 
 .btn--grey {
   background-color: $secondary-color;
-  transition: background 0.4s ease-in-out;
+  transition: background 00.2s ease-in-out;
   &:hover {
     background-color: darken( $secondary-color, 10% );
   }
@@ -13,7 +13,7 @@
 
 .btn--red {
   background-color: $primary-color;
-  transition: background 0.4s ease-in-out;
+  transition: background 00.2s ease-in-out;
   &:hover {
     background-color: darken( $primary-color, 10% );
   }

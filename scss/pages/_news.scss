@@ -1,0 +1,27 @@
+.news__post {
+  border-bottom: 2px solid $secondary-border-form;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    border-bottom: transparent;
+    margin-bottom: 0;
+  }
+}
+
+.news__post__date {
+  font-style: italic;
+  color: $secondary-color;
+}
+
+.news--left {
+  flex: 2;
+}
+
+.news--right {
+  flex: 1;
+}
+
+.news__twitter-feed {
+
+}

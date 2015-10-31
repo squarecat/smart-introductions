@@ -84,7 +84,7 @@ $linkedin-blue: #0077b5;
 }
 
 .map-container-box {
-  height: 100%;
+  height: auto;
 }
 
 .contact-us-box .c-box__column--left {
@@ -94,7 +94,11 @@ $linkedin-blue: #0077b5;
 .map-container {
   margin: 20px;
   border: 2px solid rgba(0,0,0,0.1);
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .contact-us-box {

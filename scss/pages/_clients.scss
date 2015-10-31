@@ -1,6 +1,50 @@
-.about-us-img-wrapper {
-  background-image: url("../img/about-us-img.png");
+.aboutus__box {
+  flex-direction: column;
+}
+
+.aboutus--top {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutus--bottom {
+  flex: 1;
+}
+
+.aboutus__title {
+  padding-left: 200px;
+}
+
+.aboutus__img {
+  background-image: url("../img/iain.png");
   background-size: cover;
-  height: 100%;
   background-position: center center;
+  margin: 8px;
+}
+
+.testimonials {
+  margin: 2em 0;
+  position: relative;
+}
+
+.testimonial {
+  position: relative;
+  padding: 20px 200px;
+}
+
+.testimonial__quotation-img {
+  width: 160px;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  opacity: 0.4;
+}
+
+.testimonial__company {
+  font-weight: 400;
+}
+
+.testimonial__author {
+  text-align: right;
 }

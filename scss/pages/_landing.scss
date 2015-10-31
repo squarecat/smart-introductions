@@ -37,7 +37,6 @@
 }
 
 .landing__title {
-  font-family: $roboto-font;
   font-weight: 100;
   font-size: 4rem;
   text-align: center;
@@ -50,6 +49,7 @@
 }
 
 .landing__action-btns {
+  font-family: $font-unisans-bold;
   margin: 2.5rem 0 0.8rem 0;
   padding: 0 20px;
   text-align: center;

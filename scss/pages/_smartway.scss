@@ -26,7 +26,7 @@
   margin: 10px;
   overflow: hidden;
   height: 40px;
-  transition: height .4s ease;
+  transition: height 0.2s ease;
 
   a {
     padding-left: 15px;
@@ -42,10 +42,10 @@
 
 .smartway__link__header {
   position: relative;
-  font-family: "UniSansBold";
+  font-family: $font-unisans-bold;
   background-color: $secondary-color;
   border-radius: 3px;
-  transition: color .4s ease;
+  transition: color 0.2s ease;
 
   a:after {
     content: "\f054";
@@ -63,7 +63,7 @@
     border-bottom-right-radius: 3px;
     pointer-events: none;
   }
-  
+
   &:hover {
     background-color: lighten($secondary-color, 5%);
     color: lighten($secondary-color, 5%);

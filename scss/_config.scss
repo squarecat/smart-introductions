@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
 
-// Fonts
-$roboto-font: 'Roboto', sans-serif;
 
 @font-face {
   font-family: UniSans;
@@ -12,6 +10,9 @@ $roboto-font: 'Roboto', sans-serif;
   font-family: UniSansBold;
   src: url("../fonts/Uni Sans Heavy.otf") format("opentype");
 }
+// Fonts
+$font-roboto: "Roboto", sans-serif;
+$font-unisans-bold: "UniSansBold", sans-serif;
 
 // Colors
 $primary-color: #e82618;
