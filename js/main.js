@@ -18,7 +18,6 @@
       navigation: false,
       slideSpeed : 300,
       paginationSpeed : 500,
-      rewindSpeed: 300,
       singleItem: true
     });
   }
