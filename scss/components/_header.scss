@@ -24,12 +24,14 @@
   margin: 65px 20px 15px 0;
   padding: 0;
   list-style: none;
+  font-size: 15px;
 }
 
 .c-header__link {
   position: relative;
   display: inline-block;
   padding: 20px 0;
+  text-transform: uppercase;
 
   a {
     padding: 30px 5px;
@@ -62,7 +64,7 @@
 .c-header__link--active {
 
   a {
-    color: darken($secondary-lowlight, 10%);
+    color: darken($secondary-lowlight, 20%);
   }
 
   &:after {
@@ -135,6 +137,7 @@
 
 .c-header__link-upper {
   font-family: $font-unisans-bold;
+  text-transform: uppercase;
   display: inline-block;
   margin-left: 5px;
   text-align: center;
