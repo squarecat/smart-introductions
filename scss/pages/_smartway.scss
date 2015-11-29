@@ -42,7 +42,8 @@
 
 .smartway__link__header {
   position: relative;
-  font-family: $font-unisans-bold;
+  font-weight: 400;
+  letter-spacing: -0.3px;
   background-color: $secondary-color;
   border-radius: 3px;
   transition: color 0.2s ease;

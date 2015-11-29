@@ -523,7 +523,8 @@ a, a:visited, a:hover, a:active {
 
 .smartway__link__header {
   position: relative;
-  font-family: "UniSansBold", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.3px;
   background-color: #676666;
   border-radius: 3px;
   -webkit-transition: color 0.2s ease;
