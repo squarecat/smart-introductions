@@ -39,7 +39,7 @@
   });
 
   $('.js-register-clear').on('click', function () {
-    $('.register__form').clear()
+    $('.register__form')[0].reset()
   });
 
   // Contact Us
