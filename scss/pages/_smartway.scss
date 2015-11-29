@@ -47,6 +47,7 @@
   background-color: $secondary-color;
   border-radius: 3px;
   transition: color 0.2s ease;
+  text-transform: uppercase;
 
   a:after {
     content: "\f054";
@@ -96,7 +97,7 @@
 .smartway__link__content {
   padding: 15px;
   text-align: justify;
-  color: lighten($secondary-color, 30%);
+  color: lighten($secondary-color, 15%);
   font-style: italic;
   height: 200px;
   overflow: auto;
