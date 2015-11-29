@@ -11,12 +11,13 @@
 
 .c-header__logo-container {
   float: left;
-  height: 130px;
-  padding: 24px;
+  width: 370px;
+  padding: 42px;
+  padding-left: 8px;
 }
 
 .c-header__logo {
-  height: 100%;
+  width: 100%;
 }
 
 .c-header__links {

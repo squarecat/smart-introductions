@@ -21,11 +21,22 @@
   z-index: -1;
 }
 
+.landing__header-wrapper {
+  height: calc(100vh - 124px); // 120px footer & 4px border top
+  position: relative;
+}
+
+.landing__header-inner {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  margin: 2rem auto;
+}
+
 .landing__header {
-  margin: 5vh 0;
   text-align: center;
   padding: 20px;
-
+  margin-bottom: 14vh;
   // @media screen and (max-width: $screen-tablet) {
   //   margin: 10px 0 0 0;
   // }
@@ -33,7 +44,7 @@
 
 .landing__header__logo {
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
 }
 
 .landing__title {
@@ -51,10 +62,8 @@
 
 .landing__action-btns {
   font-family: $font-unisans-bold;
-  margin: 2.5rem 0 0.8rem 0;
   padding: 0 20px;
   text-align: center;
-
   // @media screen and (max-width: $screen-tablet) {
   //   margin: 1rem 0;
   //   padding: 0;

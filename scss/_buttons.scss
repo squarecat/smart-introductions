@@ -15,6 +15,6 @@
   background-color: $primary-color;
   transition: background 00.2s ease-in-out;
   &:hover {
-    background-color: darken( $primary-color, 10% );
+    background-color: darken( $primary-color, 7% );
   }
 }

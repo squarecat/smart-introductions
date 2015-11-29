@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['scss/**/*.scss'],
-        tasks: ['sass', 'autoprefixer']
+        tasks: ['sass']
       },
       jshint: {
         files: ['js/**/*.js'],
