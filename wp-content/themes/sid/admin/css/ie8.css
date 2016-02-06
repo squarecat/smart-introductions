@@ -1,0 +1,17 @@
+#of_container #content{
+	width:594px !important;
+	float:right;
+}
+#of_container #content .section .explain{
+	width:199px !important;
+	
+}
+#of_container input[type="text"]{
+
+	padding-top:5px !important;
+	padding-right:10px !important;
+	padding-bottom:5px;
+	position:relative;
+	
+	
+}
