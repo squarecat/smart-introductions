@@ -119,35 +119,11 @@
                   </ul>
        
 		<?php } else{ ?>
-         <?php
-                $menu_name = 'primary';
-                if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
-					$menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
-					$menu_items = wp_get_nav_menu_items($menu->term_id);
-					$menu_list = '<ul class="c-header__links">';
-					$menu_select = '<select class="c-header__select">';
-					$i = 1;
-					foreach ( (array) $menu_items as $key => $menu_item ) {
-						$title = $menu_item->title;
-						$url = $menu_item->url;
-						if($url == $cur_page_url){
-							$menu_list .= '<li class="c-header__link c-header__link--active"><a href="' . $url . '">' . $title . '</a></li>';
-							$menu_select .= '<option value="' . $i . '" selected="selected">' . $title . '</option>';
-						}else{
-							$menu_list .= '<li class="c-header__link"><a href="' . $url . '">' . $title . '</a></li>';
-							$menu_select .= '<option value="' . $i . '">' . $title . '</option>';
-						}
-						$i++;
-					}
-					$menu_list .= '</ul>';
-					$menu_select .= '</select>';
-                }
-                echo $menu_list.$menu_select;
-              ?>
+        
         		<ul class="c-header__links-upper">
-			  <li class="c-header__link-upper c-header__link-upper--news"><a href="<?php echo get_permalink(16); ?>">News</a></li>
+			  <li class="c-header__link-upper c-header__link-upper--news c-header__link-upper--active"><a href="<?php echo get_permalink(16); ?>">News</a></li>
                           <li class="c-header__link-upper"><a href="<?php echo $theme_data['sd_candidates']; ?>">Candidate</a></li>                    
-                          <li class="c-header__link-upper c-header__link-upper--active"><a href="<?php echo $theme_data['sd_client']; ?>">Client</a></li>
+                          <li class="c-header__link-upper"><a href="<?php echo $theme_data['sd_client']; ?>">Client</a></li>
                     
                   </ul>
         <?php } ?>
