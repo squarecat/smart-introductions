@@ -38,10 +38,6 @@
     $('.register__form').submit()
   });
 
-  $('.js-register-clear').on('click', function () {
-    $('.register__form')[0].reset()
-  });
-
   // Contact Us
   if(window.L) {
     L.mapbox.accessToken = 'pk.eyJ1Ijoiaml2aW5ncyIsImEiOiJ6dzhhM1FJIn0.irjChrcnF1fcbBbDLvjVUQ';
