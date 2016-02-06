@@ -30,7 +30,7 @@
     <!-- Default Theme -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/vendor/owl-carousel/owl.theme.css">
 
-
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/smart-intros-favicon.ico">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
     <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
